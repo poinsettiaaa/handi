@@ -8,12 +8,12 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/img_logo1"
         android:scaleX="0.8"
         android:scaleY="0.8"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="80dp"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/img_logo1"/>
+        android:layout_marginBottom="20dp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -35,9 +35,9 @@
         android:layout_height="60dp"
         android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/btn_login"
+        android:background="@drawable/btn_sky"
         android:text="로그인"
-        android:textSize="18dp"
+        android:textSize="18sp"
         style="?android:attr/borderlessButtonStyle"/>
 
     <LinearLayout
@@ -48,7 +48,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="10dp"
+            android:paddingHorizontal="10sp"
             android:text="계정 찾기"/>
 
         <TextView
@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="10dp"
+            android:paddingHorizontal="10sp"
             android:text="비밀번호 찾기"/>
     </LinearLayout>
 
@@ -69,12 +69,15 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="60sp"
             android:layout_alignParentBottom="true"
             android:gravity="center"
             android:background="@drawable/btn_edge"
             android:text="회원 가입하기"
-            android:textAlignment="center"/>
+            android:textSize="18dp"
+            android:textFontWeight="600"
+            android:textAlignment="center"
+            android:textColor="#000000"/>
     </RelativeLayout>
 
 </LinearLayout>

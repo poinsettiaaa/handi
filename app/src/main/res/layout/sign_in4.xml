@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
                 android:layout_alignParentRight="true"
-                android:text="표시하기"
+                android:text="표시하기"/>
         </RelativeLayout>
 
         <Button

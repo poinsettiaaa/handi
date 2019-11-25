@@ -5,13 +5,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.w3c.dom.Text;
-
 public class Activity_Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(R.layout.sign_in);
+        setContentView(R.layout.sign_up);
         TextView tvFindId = (TextView) findViewById(R.id.tvFindId);
         Intent intent = getIntent();
         tvFindId.setText(intent.getStringExtra("tvFindId")).toString());

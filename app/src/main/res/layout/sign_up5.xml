@@ -112,6 +112,19 @@
             android:text="다음"
             android:textSize="18sp"
             style="?android:attr/borderlessButtonStyle"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <DatePicker
+                android:id="@+id/dataPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"/>
+        </RelativeLayout>
     </LinearLayout>
 
     <RelativeLayout

@@ -144,7 +144,7 @@
             android:textSize="18dp"
             android:textFontWeight="600"
             android:textAlignment="center"
-            android:textColor="#000000"/>
+            android:textColor="#666666"/>
     </RelativeLayout>
 
 </RelativeLayout>

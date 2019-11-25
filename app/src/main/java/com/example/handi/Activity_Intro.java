@@ -19,19 +19,10 @@ public class Activity_Intro extends AppCompatActivity {
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
                 //startActivity(intent);
-                startActivity(new Intent(Activity_Intro.this, Activity_Intro.class));
+                startActivity(new Intent(Activity_Intro.this, Activity_Login.class));
                 finish();
             }
         };
         handler.sendEmptyMessageDelayed(0, 3000);
-    }
-}
-
-public class Activity_Login extends Activity {
-    /** Called when the activity is first created. */
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
     }
 }

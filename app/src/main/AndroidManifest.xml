@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.handi">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_foodinside"
@@ -10,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".Activity_SignUp5">
+        <activity android:name=".Activity_SignUp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -18,7 +20,7 @@
         </activity>
 
         <activity android:name=".Activity_Login"/>
-        <activity android:name=".Activity_SignUp"/>
+        <activity android:name=".Activity_SignUp5"/>
         <activity android:name=".Activity_Intro"/>
     </application>
 

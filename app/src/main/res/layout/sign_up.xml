@@ -98,6 +98,7 @@
         </RelativeLayout>
 
         <Button
+            android:id="@+id/btnNext"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="60dp"

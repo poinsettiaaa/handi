@@ -8,12 +8,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class Activity_SignUp3 extends AppCompatActivity {
 
     private Button btnNext;
+    private EditText etid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class Activity_SignUp3 extends AppCompatActivity {
 
 
         btnNext = findViewById(R.id.btnNext);
+        etid = findViewById(R.id.etid);
 
 
         btnNext.setOnClickListener(new View.OnClickListener() {

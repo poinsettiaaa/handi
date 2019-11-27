@@ -15,6 +15,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.handi.api.ApiService;
 import com.example.handi.api.Api_Base;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 
 import java.util.HashMap;
 
@@ -28,9 +31,10 @@ public class Activity_SignUp extends AppCompatActivity {
 
     public Activity activity;
 
-    //통신(변수 선언)
+    // START 통신
     private Retrofit retrofit;
     private ApiService apiService;
+    // END 통신
 
     private TextView tvEmail;
     private TextView tvTel;
@@ -42,22 +46,38 @@ public class Activity_SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
 
+
+
+
+        FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(new OnSuccessListener<InstanceIdResult>() {
+            @Override
+            public void onSuccess(InstanceIdResult instanceIdResult) {
+                String deviceToken = instanceIdResult.getToken();
+
+                Log.d("deviceToken", deviceToken);
+            }
+        });
+
+
+
+
         //아이디 변수 연결
         tvEmail = findViewById(R.id.tvEmail);
         tvTel = findViewById(R.id.tvTel);
         etEmail = findViewById(R.id.etEmail);
         btnNext = findViewById(R.id.btnNext);
 
+
+        // START 통신
         retrofit = new Retrofit.Builder()
                 .baseUrl(ApiService.SERVER_URI)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
         apiService = retrofit.create(ApiService.class);
+        // END 통신
 
         activity = Activity_SignUp.this;
-
-
         tvEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             //클릭시

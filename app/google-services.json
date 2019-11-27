@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "708588360655",
+    "firebase_url": "https://handi-1f40b.firebaseio.com",
+    "project_id": "handi-1f40b",
+    "storage_bucket": "handi-1f40b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708588360655:android:f4e2f2621aa09b73f438ba",
+        "android_client_info": {
+          "package_name": "com.example.handi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708588360655-iua8ksb4g6sspuaa70dgqvfsbdt49fln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8GqpFzBHCOBNs1ib3rrzyARWY3mpsQps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708588360655-iua8ksb4g6sspuaa70dgqvfsbdt49fln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

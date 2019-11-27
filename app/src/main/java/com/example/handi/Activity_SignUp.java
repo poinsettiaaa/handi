@@ -125,6 +125,7 @@ public class Activity_SignUp extends AppCompatActivity {
 
                             if (apiBase.getResult()) {
                                 Toast.makeText(activity, "사용 가능한 이메일입니다.", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(Activity_SignUp.this, Activity_SignUp3.class));
                             } else {
                                 Toast.makeText(activity, apiBase.getMsg(), Toast.LENGTH_SHORT).show();
                             }

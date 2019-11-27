@@ -64,6 +64,7 @@
             android:layout_marginBottom="20dp">
 
             <EditText
+                android:id="@+id/etid"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/inp_edge_bottom"
@@ -75,6 +76,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/btnNext"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginHorizontal="30dp"
